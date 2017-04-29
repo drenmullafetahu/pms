@@ -1,0 +1,111 @@
+.notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+    box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.notice-sm {
+    padding: 10px;
+    font-size: 80%;
+}
+.notice-lg {
+    padding: 35px;
+    font-size: large;
+}
+.notice-success {
+    border-color: #80D651;
+}
+.notice-success>strong {
+    color: #80D651;
+}
+.notice-info {
+    border-color: #45ABCD;
+}
+.notice-info>strong {
+    color: #45ABCD;
+}
+.notice-warning {
+    border-color: #FEAF20;
+}
+.notice-warning>strong {
+    color: #FEAF20;
+}
+.notice-danger {
+    border-color: #d73814;
+}
+.notice-danger>strong {
+    color: #d73814;
+}
+
+.avatar {
+    position: relative;
+    margin-bottom: 15px;
+
+}
+.avatar img {
+    width: 50px;
+    height:50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(210,204,204);
+}
+
+.tab-pane{
+    height:350px;
+}
+
+#profile-position{
+    margin-left:10%;
+}
+
+#responseTitle{
+    font-size: 15px;
+    width: 80%;
+}
+#boxTitle {
+    font-size: 15px;
+}
+.kanabanLabel{
+    margin-top: .4%;
+    position: relative;
+}
+.nav-tabs-custom{
+    height:500px;
+}
+@media (max-width:767px) {
+    #accordion {
+        width: 300px;
+
+    }
+
+    #responseTitle{
+        font-size: 14px;
+        width: 80%;
+    }
+    #responseCollapse-Inside{
+        font-size: 12px;
+    }
+
+    #profile-position{
+        margin:0;
+    }
+    .task-response-table{
+        font-size: 11px;
+    }
+
+    .qeti:nth-of-type(2n){
+        margin-right:50px;
+    }
+    .kanabanLabel{
+        margin-top: .8%;
+        position: relative;
+    }
+    .mynav-tabs-custom {
+        height:700px !important;
+    }
+
+}

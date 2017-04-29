@@ -1,0 +1,42 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: dramd
+ * Date: 12/25/2016
+ * Time: 11:19 PM
+ */
+namespace Controllers;
+
+use App\Http\Requests;
+use App\Http\Requests\AppRequest;
+use App\ViewShare\Staff;
+use Illuminate\Foundation\Auth\User;
+use Illuminate\Routing\Route;
+use Models\Courses;
+use Models\CoursesDetails;
+use Models\CourseStaff;
+use Models\Languages;
+use Models\Projects;
+use Models\Tasks;
+use Session;
+use App\ViewShare\Dashboard as ViewShare;
+
+class ManageActivitiesController extends MainController
+{
+    public function __construct(AppRequest $request, Route $route)
+    {
+        parent::__construct($request, $route);
+        $this->_viewShare = new ViewShare($route, $request);
+        $this->_viewShare->setAction($this->_action);
+        $this->_viewShare->setController($this->_controller);
+        $this->_viewShare->share();
+//        $this->middleware('role:owner');
+//        $this->middleware('role:admin');
+
+    }
+
+    public function index()
+    {
+        return view('dashboard.templates.activity_manage');
+    }
+}

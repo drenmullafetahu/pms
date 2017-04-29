@@ -1,0 +1,135 @@
+*{
+  font-size:15px;
+  margin:0;padding:0;
+  font-family:'Ubuntu',sans-serif;
+}
+ul{margin:0;padding:0;}
+ul li {list-style-type:none;margin:0;padding:0;}
+.width100{width:100%;}
+.FL{float:left;}
+
+.alignC {
+  margin: 0 auto;
+  width: 60%;
+}
+.alignR{
+  float:left;
+  width:60%;
+  margin-left:5%;
+}
+.alignC-table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container{float:left;width:100%;padding:0;}
+.center-container{float:left;width:88%;margin-left:12%;}
+
+/*admin - panel*/
+
+.left-bar {background-color:#eeeeee;position: fixed;z-index:99999;left: 0;top: 0;bottom: 0;width: 12%;-webkit-box-shadow:  2px 0 4px -2px #adadad;box-shadow: 2px 0 4px -2px #adadad;padding-top:8px;}
+
+.left-bar nav.languages{float:left;border-bottom: 2px solid #000;width:100%;padding-bottom:8px;}
+.left-bar nav.languages ul,.left-bar nav.languages ul li, .left-bar nav.languages ul li a{float:left;}
+.left-bar nav.languages ul li a{padding:0 0 0 15px;color:#000;font-size:14px;font-family:'arial',sans-serif;}
+.left-bar nav.languages ul li a:hover,.left-bar nav.languages ul li a.active{color:#4285f4;}
+
+.left-bar nav.main-links ul{float:left;width:100%;}
+.left-bar nav.main-links ul li{float:left;width:100%;}
+.left-bar nav.main-links > ul > li > a{ color:#333333;}
+.left-bar nav.main-links ul li a{float:left;width:100%;padding:10px 15px;}
+.left-bar nav.main-links ul li a:hover{background-color:#ffffff;color:#767676;text-decoration:none;border-right:3px solid #4285f4;}
+
+.left-bar nav.main-links ul li.seperator a{font-size:13px;text-transform:uppercase;color:#767676;margin-top:20px;padding:0 15px 5px 10px;}
+.left-bar nav.main-links ul li.seperator a span{font-size:12px;}
+.left-bar nav.main-links ul li.seperator a:hover{background:none;border:none;}
+
+.left-bar nav.main-links ul li ul{width:100%;margin-top:8px;}
+.left-bar nav.main-links ul li ul li a{width:100%;border-right: 3px solid #eeeeee;}
+.left-bar nav.main-links ul li ul li a:hover{border-right:3px solid #4285f4;}
+.left-bar nav.main-links ul li ul li a:hover span{color:#767676}
+.left-bar nav.main-links ul li ul li a.active{border-right:3px solid #4285f4;background-color:#ffffff;color:#767676;text-decoration:none;}
+.left-bar nav.main-links ul li ul li a.active span{color:#767676}
+.left-bar nav.main-links ul li ul li a span{float:left;font-size:13px;color:#494949;}
+.left-bar nav.main-links ul li ul li a span.icons{float:right;font-size:15px;color:#494949;margin-top:2px;}
+.left-bar nav.main-links ul li ul li a span.main{color:#393939;}
+.left-bar nav.main-links .borders,.right-bar .borders {position: relative;border-bottom: 1px solid #ffffff;}
+.left-bar nav.main-links .borders:before,.right-bar .borders:before {content:"";display:block;position:absolute;left:0;bottom:0;width:100%;height:1px;background:#dedede;}
+
+
+.breadcrumbs-holder{float:left;width:100%;}
+.breadcrumb{background-color:#424242;-webkit-border-radius: 0;border-radius: 0;margin-bottom:0;}
+.breadcrumb li,.breadcrumb a{color:#fff;}
+.breadcrumb > .active{color:#dadada;}
+
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group{margin-left:8px;}
+
+.alert{position:absolute;width:73%;margin-left:12%;z-index:10000;}
+.alert-danger{position:absolute;width:73%;margin-left:0;z-index:10000;}
+.alert ul,.alert ul li{margin:0;}
+
+
+.action-buttons{float:left;width:100%;background-color:#fafafa;}
+.action-buttons ul{margin:0;padding:0;float:left;}
+.action-buttons ul li{margin:0;padding:0;position:relative;float:left;margin-right:15px;}
+.action-buttons a{float:left;padding:8px 15px; color:#000;text-decoration:none;}
+.action-buttons a span{float:left;font-size:13px;}
+.action-buttons a span.title{float:left;}
+.action-buttons a span.icons{margin-top:3px;margin-right:4px;}
+.action-buttons a:hover{text-decoration:none;background-color:#fff;}
+
+.action-buttons ul li ul.sub-actions{z-index:10;background-color:#fafafa;visibility:hidden;opacity:0;position:absolute;max-width:250px;left:0;top:33px;}
+.action-buttons ul li ul.sub-actions li{width:100%;}
+.action-buttons ul li ul.sub-actions li a{width:100%;margin:0;}
+
+.filters{float:left;width:100%;margin-top:20px;}
+.filters .filter-search{margin-top:27px;}
+
+/* Secion Content and table*/
+section.content{float:left;width:100%;}
+section.content table tr td{font-size:13px;padding:5px 8px;}
+section.content table tr th{font-size:14px;}
+section.content table tr td.edit{font-size:15px;}
+section.content label.main-label{float:left;width:100%;}
+section.content .menu-id-holder{float:left;width:98%;overflow-y:scroll;border: 1px solid #ccc;padding:2% 0 2% 2%;}
+
+section.content table th.id{width:5%;}
+section.content table th.title{width:40%;}
+section.content table th.name{width:17%;}
+section.content table th.parents_name{width:12%;}
+section.content table th.reg_year{width:12%;}
+section.content table th.email{width:16%;}
+section.content table th.program{width:30%;}
+
+section.content table th span.title{float:left;width:100%;text-align:center;padding-bottom:5px;}
+section.content table th span.input{text-align:center;display:block;width:100%;}
+section.content table td.permission-button{text-align:center;}
+section.content td.edit,section.content td.delete,
+section.content th.edit,section.content th.delete {width:10%;text-align:center;}
+section.content td a{font-size:21px;}
+section.content td.delete a{font-size:18px;color:#d9534f;}
+section.content td.delete a:hover{color:#fc6b67;}
+section.content td a:hover{text-decoration:none;color:#5daef4;}
+
+/* admin-form */
+.admin-form{float:left;width:100%;background-color:#F5F5F5;padding:15px;}
+.admin-form label{font-size:14px;}
+
+.form-error-alerts{float:left;width:100%;position:relative;}
+.form-error-alerts .alert-danger{position:relative;width:100%;}
+.admin-form .label-validation-error{color:red;}
+.admin-form .input-validation-error{border:1px solid red;}
+
+.form-inputs{float:left;width:100%;}
+.reset-password{display:none;}
+
+
+.mTop3{margin-top:30px;}
+
+.mRight15{margin-right:15px;}
+.mRight20{margin-right:20px;}
+.mRight25{margin-right:25px;}
+.mRight30{margin-right:30px;}
+
+.rmPadding{padding:0;}
+.floatL{float:left;}

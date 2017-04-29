@@ -1,0 +1,20 @@
+
+#menyja1{
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    width: 50px;
+
+
+}
+
+
+
+
+@media (max-width:767px) {
+    #menyja1 {
+        right: 30px;
+
+    }
+
+}
